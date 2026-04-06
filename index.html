@@ -487,7 +487,7 @@
         <script src="dock.js"></script>
         <div id="toast-container" class="toast-container"></div>
         <script>
-            const api = "http://127.0.0.1:5000/api/contact";
+            const api = "https://portfolio-backend-taupe-sigma.vercel.app/api/contact";
             const from = document.getElementById("from-contact");
             const submitBtn = document.getElementById("submit-btn");
 
@@ -495,7 +495,7 @@
                 const container = document.getElementById('toast-container');
                 const toast = document.createElement('div');
                 toast.className = `toast ${type}`;
-                
+
                 const icon = type === 'success' ? 'check_circle' : 'error';
                 const iconColor = type === 'success' ? 'text-green-400' : 'text-red-400';
 
@@ -507,7 +507,7 @@
                 `;
 
                 container.appendChild(toast);
-                
+
                 // Trigger animation
                 requestAnimationFrame(() => {
                     toast.style.transform = 'translateX(0)';
@@ -541,7 +541,7 @@
                         },
                         body: JSON.stringify({ name, email, message }),
                     });
-                    
+
                     if (response.ok) {
                         showToast("Message sent successfully!", "success");
                         from.reset();
@@ -560,7 +560,7 @@
 
             from.addEventListener("submit", async (e) => {
                 e.preventDefault();
-                
+
                 try {
                     submitBtn.disabled = true;
                     const originalContent = submitBtn.innerHTML;
