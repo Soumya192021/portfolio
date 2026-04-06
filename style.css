@@ -160,3 +160,10 @@ body {
 .content {
     padding: 40px;
 }
+
+.font-header {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 2px;
+}
