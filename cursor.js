@@ -17,9 +17,15 @@ const renderedStyles = {
     ty: { previous: 0, current: 0, amt: 0.15 }
 };
 
+const isDesktopWidth = () => {
+    return window.innerWidth >= 768;
+}
+
 gsap.set([lineHorizontal, lineVertical], { opacity: 0 });
 
 function handleMouseMove(ev) {
+    if (!isDesktopWidth()) return;
+
     mouse = {
         x: ev.clientX,
         y: ev.clientY
@@ -29,6 +35,7 @@ function handleMouseMove(ev) {
 window.addEventListener("mousemove", handleMouseMove);
 
 function firstMouseMove() {
+    if (!isDesktopWidth()) return;
     renderedStyles.tx.previous = renderedStyles.tx.current = mouse.x;
     renderedStyles.ty.previous = renderedStyles.ty.current = mouse.y;
 
@@ -78,6 +85,7 @@ function leave() {
 }
 
 function render() {
+    if (!isDesktopWidth()) return;
     renderedStyles.tx.current = mouse.x;
     renderedStyles.ty.current = mouse.y;
 
