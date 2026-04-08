@@ -89,14 +89,21 @@
                         class="dock-label absolute -top-8 px-2 py-1 bg-[#2d3449] text-xs font-bold rounded opacity-0 pointer-events-none luxury-transition">Stack</span>
                 </a>
                 <a class="dock-item relative group flex items-center justify-center w-12 h-12 rounded-full hover:bg-primary-fixed-dim/20 luxury-transition text-slate-400 hover:text-primary-fixed-dim"
+                    href="#work">
+                    <span class="material-symbols-outlined text-2xl">work</span>
+                    <span
+                        class="dock-label absolute -top-8 px-2 py-1 bg-[#2d3449] text-xs font-bold rounded opacity-0 pointer-events-none luxury-transition">Work</span>
+                </a>
+                <a class="dock-item relative group flex items-center justify-center w-12 h-12 rounded-full hover:bg-primary-fixed-dim/20 luxury-transition text-slate-400 hover:text-primary-fixed-dim"
                     href="#contact">
                     <span class="material-symbols-outlined text-2xl">alternate_email</span>
                     <span
                         class="dock-label absolute -top-8 px-2 py-1 bg-[#2d3449] text-xs font-bold rounded opacity-0 pointer-events-none luxury-transition">Contact</span>
                 </a>
                 <div class="w-px h-8 bg-white/10 mx-2"></div>
-                <a class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary-container text-white hover:scale-110 luxury-transition shadow-lg"
-                    href="mailto:soumyamondal1986021@gmail.com">
+                <a target="_blank"
+                    class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary to-primary-container text-white hover:scale-110 luxury-transition shadow-lg"
+                    href="./assets/CURRICULU_MVITAE_sm.pdf">
                     <span class="material-symbols-outlined text-2xl">description</span>
                 </a>
             </nav>
@@ -111,10 +118,10 @@
         <div class="glow-orb bg-tertiary w-[400px] h-[400px] bottom-20 -right-20"></div>
 
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            <div class="md:col-span-8 z-10 reveal">
+            <div class="md:col-span-8 z-10 reveal pb-12 md:pb-0">
                 <p class="font-smooch-sans-normalt text-primary tracking-[0.2em] mb-4 uppercase text-sm font-semibold">
                     Welcome to my
-                    Digital Space</p>
+                    <span id="typing-text"></span><span class="blinking-cursor">|</span></p>
                 <h1
                     class="font-header text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-on-surface mb-6 leading-none">
                     <span>Soumya</span>
@@ -131,8 +138,8 @@
                         Contact Me
                     </a>
                     <a class="px-8 py-4 glass-panel border border-white/10 text-on-surface font-bold rounded-xl luxury-transition hover:bg-surface-container-high"
-                        href="#about">
-                        Learn More
+                        href="#work">
+                        Projects
                     </a>
                 </div>
             </div>
@@ -178,25 +185,25 @@
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                     <div
-                        class="p-8 glass-panel border border-white/10 rounded-2xl luxury-transition hover:translate-y-[-8px]">
+                        class="p-3 md:p-6 lg:p-8 glass-panel border border-white/10 rounded-2xl luxury-transition hover:translate-y-[-8px]">
                         <span class="material-symbols-outlined text-4xl text-primary mb-4">school</span>
                         <h4 class="font-headline text-xl font-bold text-on-surface mb-2">Education</h4>
                         <p class="text-sm text-on-surface-variant">Diploma in CST</p>
                     </div>
                     <div
-                        class="p-8 glass-panel border border-white/10 rounded-2xl mt-8 luxury-transition hover:translate-y-[-8px]">
+                        class="p-3 md:p-6 lg:p-8 glass-panel border border-white/10 rounded-2xl mt-8 luxury-transition hover:translate-y-[-8px]">
                         <span class="material-symbols-outlined text-4xl text-secondary mb-4">code</span>
                         <h4 class="font-headline text-xl font-bold text-on-surface mb-2">Development</h4>
                         <p class="text-sm text-on-surface-variant">Full-stack Aspirant</p>
                     </div>
                     <div
-                        class="p-8 glass-panel border border-white/10 rounded-2xl luxury-transition hover:translate-y-[-8px]">
+                        class="p-3 md:p-6 lg:p-8 glass-panel border border-white/10 rounded-2xl luxury-transition hover:translate-y-[-8px]">
                         <span class="material-symbols-outlined text-4xl text-tertiary mb-4">design_services</span>
                         <h4 class="font-headline text-xl font-bold text-on-surface mb-2">UI Design</h4>
                         <p class="text-sm text-on-surface-variant">Clean Aesthetics</p>
                     </div>
                     <div
-                        class="p-8 glass-panel border border-white/10 rounded-2xl mt-8 luxury-transition hover:translate-y-[-8px]">
+                        class="p-3 md:p-6 lg:p-8 glass-panel border border-white/10 rounded-2xl mt-8 luxury-transition hover:translate-y-[-8px]">
                         <span class="material-symbols-outlined text-4xl text-primary mb-4">bolt</span>
                         <h4 class="font-headline text-xl font-bold text-on-surface mb-2">Efficiency</h4>
                         <p class="text-sm text-on-surface-variant">Optimized Code</p>
@@ -335,6 +342,121 @@
         </div>
     </section>
 
+    <!-- Project Arsenal Section -->
+    <section class="py-32 px-8 bg-surface relative" id="work">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-20">
+                <div>
+                    <div class="flex items-baseline gap-4 mb-4">
+                        <h2 class="text-6xl font-headline font-extrabold tracking-tighter">Project Arsenal</h2>
+                    </div>
+                    <p class="text-on-surface-variant text-lg max-w-xl">A curated selection of experiments and
+                        engineering feats, extracted from my GitHub repositories.</p>
+                </div>
+                <a class="group flex items-center gap-2 text-primary font-bold tracking-tight" target="_blank"
+                    href="https://github.com/Soumya192021?tab=repositories">
+                    Explore All Repositories
+                    <span
+                        class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </a>
+            </div>
+            <!-- Bento Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <!-- Large Featured Card -->
+                <div
+                    class="md:col-span-8 group relative rounded-xl overflow-hidden glass-card border border-outline-variant/15 glow-shadow transition-all duration-500 custom-bezier">
+                    <div class="h-[400px] w-full relative overflow-hidden">
+                        <img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700"
+                            data-alt="high-tech dark user interface dashboard with vibrant neon charts and glowing abstract data visualizations"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCojqub-3nwoFcnLpf4uSIZ-o5MeqzbaOfdJbgh69OQnsNHy0VoxGT6kEmBjJr3qC-wmJzKXiAwpelclPaUeiExz_-jU_rKH4aV0ftmEkIZcsk-W58wdCysInEDwVnE0j6cXyvh2Vw-SOE0pX02SsIQm_5DCAxfImbaQrEvqjeGGe2lC-rktPnOtbHvIBnq60SjQHFvFB4o42C7TgizJ7X8iooiVs-uBpKQPICPqAbeSK1pFHKE_qLYoAMZBgtCfoO7B1irSrgcpXE" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent">
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 p-8 w-full">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-primary/10 text-primary border border-primary/20 rounded-full text-xs font-bold tracking-wider">Next.js
+                                14</span>
+                            <span
+                                class="px-3 py-1 bg-tertiary/10 text-tertiary border border-tertiary/20 rounded-full text-xs font-bold tracking-wider">Supabase</span>
+                        </div>
+                        <h3 class="text-3xl font-headline font-bold mb-3">E-commerce Engine</h3>
+                        <p class="text-on-surface-variant line-clamp-2 max-w-2xl mb-6">A high-performance headless
+                            commerce core optimized for sub-second page loads and complex inventory logic.</p>
+                        <button
+                            class="flex items-center gap-2 px-6 py-3 bg-surface-container-highest text-on-surface rounded-lg hover:bg-primary hover:text-on-primary-container transition-all duration-300">
+                            <span class="material-symbols-outlined text-[20px]">code</span>
+                            <span class="font-bold text-sm">View Code</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Vertical Small Card -->
+                <div
+                    class="md:col-span-4 group relative glass-card border border-outline-variant/15 rounded-xl p-8 glow-shadow transition-all duration-500 custom-bezier flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="w-14 h-14 rounded-xl bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center mb-8 border border-secondary/20 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-secondary text-3xl">brush</span>
+                        </div>
+                        <h3 class="text-2xl font-headline font-bold mb-3">Spice Fusion</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">A modern e-commerce platform
+                            for spices and herbs.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-[10px] uppercase font-bold text-on-surface-variant/70 tracking-widest px-2 py-1 bg-outline-variant/10 rounded">HTML</span>
+                            <span
+                                class="text-[10px] uppercase font-bold text-on-surface-variant/70 tracking-widest px-2 py-1 bg-outline-variant/10 rounded">CSS</span>
+                            <span
+                                class="text-[10px] uppercase font-bold text-on-surface-variant/70 tracking-widest px-2 py-1 bg-outline-variant/10 rounded">JavaScript</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Soumya192021/Spice_Fusion" target="_blank"
+                        class="mt-8 flex items-center justify-center gap-2 w-full py-3 border border-outline-variant/20 rounded-lg hover:border-primary/50 hover:text-primary transition-all">
+                        <span class="material-symbols-outlined text-[18px]">terminal</span>
+                        <span class="text-xs font-bold uppercase tracking-widest">Source Code</span>
+                    </a>
+                </div>
+                <!-- Row of Small Cards -->
+                <div
+                    class="md:col-span-4 group glass-card border border-outline-variant/15 rounded-xl p-8 glow-shadow transition-all duration-500 custom-bezier">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="material-symbols-outlined text-primary text-4xl">
+                            gamepad
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-headline font-bold mb-2">Snake Gamer</h3>
+                    <p class="text-on-surface-variant text-sm mb-6">A classic snake game with modern UI and smooth
+                        gameplay.</p>
+                    <div class="flex gap-2 mb-8">
+                        <span
+                            class="text-[10px] uppercase font-bold text-on-surface-variant/70 tracking-widest px-2 py-1 bg-outline-variant/10 rounded">Python</span>
+                    </div>
+                    <button onclick="window.open('https://github.com/Soumya192021/snake-game', '_blank')"
+                        class="text-primary text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                        Inspect Repository <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </button>
+                </div>
+                <div
+                    class="md:col-span-4 group glass-card border border-outline-variant/15 rounded-xl p-8 glow-shadow transition-all duration-500 custom-bezier flex items-center justify-center">
+                    <p class="text-on-surface-variant text-sm">
+                        coming soon
+                    </p>
+                </div>
+                <div
+                    class="md:col-span-4 group glass-card border border-outline-variant/15 rounded-xl p-8 glow-shadow transition-all duration-500 custom-bezier flex items-center justify-center">
+                    <p class="text-on-surface-variant text-sm">
+                        coming soon
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Background Ambient Orb -->
+        <div
+            class="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[140px] -z-10">
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="py-32 px-8 bg-surface-container-low relative" id="contact">
         <div class="max-w-7xl mx-auto reveal">
@@ -405,7 +527,7 @@
                     </div>
                 </div>
                 <div class="lg:col-span-7">
-                    <div class="glass-panel p-10 rounded-3xl border border-white/10 shadow-2xl">
+                    <div class="glass-panel p-2 md:p-6 lg:p-8 rounded-3xl border border-white/10 shadow-2xl">
                         <form id="from-contact" class="space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="space-y-2">

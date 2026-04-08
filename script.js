@@ -110,8 +110,48 @@ const revealOnScroll = () => {
     });
 };
 
+// Typing Effect
+const initTypingEffect = () => {
+    const textElement = document.getElementById("typing-text");
+    if (!textElement) return;
+
+    const words = ["Digital Space", "Portfolio"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typeDelay = 150;
+
+    const type = () => {
+        const currentWord = words[wordIndex];
+        
+        if (isDeleting) {
+            textElement.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+            typeDelay = 50;
+        } else {
+            textElement.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+            typeDelay = 150;
+        }
+
+        if (!isDeleting && charIndex === currentWord.length) {
+            isDeleting = true;
+            typeDelay = 2000;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typeDelay = 500;
+        }
+
+        setTimeout(type, typeDelay);
+    };
+
+    setTimeout(type, 1000);
+};
+
 // Initialize everything
 document.addEventListener("DOMContentLoaded", () => {
     scrollSpy();
     revealOnScroll();
+    initTypingEffect();
 });
